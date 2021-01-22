@@ -32,8 +32,10 @@ export default function StickyFooter() {
         <Typography variant='h2' component='h1' gutterBottom>
           Daniel Cutipa
         </Typography>
-        <Typography variant='h5' component='h2' gutterBottom>
+        <Typography variant='h4' component='h2' gutterBottom>
           {'Frontend Developer with React js.'}
+        </Typography>
+        <Typography variant='h5' component='h2' gutterBottom>
           {'Team Leader and Coach.'}
         </Typography>
         <Typography variant='body1'>That is a test.</Typography>
