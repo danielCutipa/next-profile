@@ -1,7 +1,5 @@
-import React, { PropsWithChildren } from 'react'
-
-import Navbar from '@components/navbar/Navbar'
 import Footer from '@components/footer/Footer'
+import NavBar from '@components/navbar/NavBar'
 
 type LayoutProps = {
   children?: React.ReactNode
@@ -9,7 +7,7 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => (
   <>
-    <Navbar />
+    <NavBar />
     {children}
     <Footer />
   </>
