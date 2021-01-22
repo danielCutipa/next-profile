@@ -1,19 +1,22 @@
 import { AppProps } from 'next/app'
 import '../global.css'
 
-import CartProvider from '@store/Cart'
-import Layout from '@components/layout/Layout'
+import { CssBaseline, ThemeProvider } from '@material-ui/core'
+
+import theme from '../src/theme'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   // Aditional props
   // Aditional layout
   // Manejar errores - componentDidCatch
   return (
-    <Layout>
-      <CartProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+        <CssBaseline />
         <Component {...pageProps} />
-      </CartProvider>
-    </Layout>
+      </ThemeProvider>
+    </>
   )
 }
 
