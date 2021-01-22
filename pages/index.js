@@ -1,11 +1,24 @@
+// import * as React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
+import Link from '@material-ui/core/Link'
 
-import Footer from 'components/footer/Footer'
+function Copyright() {
+  return (
+    <Typography variant='body2' color='textSecondary'>
+      {'Copyright © '}
+      <Link color='inherit' href='https://danielcutipa.com/'>
+        Daniel Cutipa
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  )
+}
 
-const Home = () => {
+export default function Home() {
   return (
     <Box
       sx={{
@@ -20,7 +33,7 @@ const Home = () => {
           Daniel Cutipa
         </Typography>
         <Typography variant='h5' component='h2' gutterBottom>
-          {'Frontend Developer with React.js.'}
+          {'Frontend Developer with React js.'}
         </Typography>
         <Typography variant='h5' component='h2' gutterBottom>
           {'Team leader and coach.'}
@@ -43,11 +56,9 @@ const Home = () => {
           <Typography variant='body1'>
             My sticky footer can be found here.
           </Typography>
-          <Footer />
+          <Copyright />
         </Container>
       </Box>
     </Box>
   )
 }
-
-export default Home
