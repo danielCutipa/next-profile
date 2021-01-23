@@ -12,7 +12,7 @@ const Home = () => {
         minHeight: '100vh'
       }}
     >
-      <Container component='main' maxWidth='sm' style={{ paddingTop: '30vh' }}>
+      <Container component='main' maxWidth='md' style={{ paddingTop: '30vh' }}>
         <Typography variant='h2' component='h1' gutterBottom>
           Daniel Cutipa
         </Typography>

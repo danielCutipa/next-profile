@@ -9,7 +9,7 @@ const Footer = () => {
         bottom: 0
       }}
     >
-      <Container maxWidth='sm' style={{ marginBottom: 10 }}>
+      <Container maxWidth='md' style={{ marginBottom: 10 }}>
         <Typography variant='body1' align='center'>
           Made with ❤ from Bolivia.
         </Typography>
