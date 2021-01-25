@@ -1,25 +1,25 @@
-import * as React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
-import Copyright from '../src/Copyright';
+import Container from '@material-ui/core/Container'
+import Typography from '@material-ui/core/Typography'
+import Box from '@material-ui/core/Box'
+import Button from '@material-ui/core/Button'
+import ProTip from 'components/ProTip'
+import Link from 'src/Link'
+import Copyright from 'components/layout/Copyright'
 
-export default function About() {
+const About = () => {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth='sm'>
       <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
+        <Typography variant='h4' component='h1' gutterBottom>
           Next.js v5-alpha example
         </Typography>
-        <Button variant="contained" component={Link} noLinkStyle href="/">
+        <Button variant='contained' component={Link} noLinkStyle href='/'>
           Go to the main page
         </Button>
         <ProTip />
         <Copyright />
       </Box>
     </Container>
-  );
+  )
 }
+export default About

@@ -1,0 +1,13 @@
+.wrap {
+  background-color: #eceff1;
+  min-height: 100vh;
+}
+.root {
+  display: flex;
+  flex-wrap: wrap;
+}
+.paper {
+  width: 128px;
+  height: 128px;
+  margin: 0px 20px;
+}

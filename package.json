@@ -1,13 +1,15 @@
 {
   "name": "profile",
-  "version": "5.0.0",
+  "version": "1.0.0",
+  "description": "Daniel Cutipa´s profile",
   "private": true,
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
-    "@emotion/styled": "latest",
     "@emotion/server": "latest",
+    "@emotion/styled": "latest",
     "@material-ui/core": "next",
+    "@material-ui/icons": "^5.0.0-alpha.23",
     "clsx": "latest",
     "next": "latest",
     "prop-types": "latest",
@@ -18,6 +20,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
-  }
+  },
+  "author": "daniel cutipa <daniel.cutipa@hotmail.com>",
+  "license": "MIT"
 }
