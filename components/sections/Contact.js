@@ -1,26 +1,60 @@
-import { Box, Paper, Typography } from '@material-ui/core'
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  Link,
+  makeStyles,
+  Typography
+} from '@material-ui/core'
+import ReCAPTCHA from 'react-google-recaptcha'
 import styles from 'styles/Contact.module.css'
-import BuildIcon from '@material-ui/icons/Build'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1
+  }
+}))
 
 const About = () => {
+  const classes = useStyles()
+
+  const onChange = (value) => {
+    console.log(value)
+  }
+
   return (
     <Box component='section' color='secondary' className={styles.wrap}>
       <Typography variant='h2' align='center' sx={{ mt: 2 }} gutterBottom>
         Contact
       </Typography>
       <Typography
-        variant='h3'
+        variant='h5'
         align='center'
         color='secondary'
         sx={{ mt: '10vh' }}
         gutterBottom
       >
-        Building <BuildIcon />
+        Would you like to work with me? Awesome!
       </Typography>
-      {/* <div className={styles.root}>
-        <Paper className={styles.paper} elevation={15} />
-        <Paper className={styles.paper} elevation={24} />
-      </div> */}
+
+      <Container maxWidth='md'>
+        <div className={classes.root}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} align='center'>
+              <ReCAPTCHA
+                sitekey='6Le9_j0aAAAAALXLTvvKls5rQQxHjm-IcIEKFYJ8'
+                onChange={onChange}
+                style={{ marginBottom: 16 }}
+              />
+
+              <Link href='#' target='_blank'>
+                <Button variant='outlined'>let's talk</Button>
+              </Link>
+            </Grid>
+          </Grid>
+        </div>
+      </Container>
     </Box>
   )
 }
