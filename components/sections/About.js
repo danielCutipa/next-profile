@@ -46,9 +46,16 @@ const About = () => {
             <Grid item sm={6} xs={12} className={styles.text}>
               <Box>
                 <Typography variant='h5' gutterBottom component='div'>
-                  Text about me
+                  I am a software developer in web technologies, passionate
+                  about building web applications that make people's lives
+                  easier.
                 </Typography>
-                <Button variant='contained' color='secondary'>
+                <Button
+                  variant='contained'
+                  href='https://www.linkedin.com/in/danielcutipa'
+                  target='_blank'
+                  color='secondary'
+                >
                   Resume
                 </Button>
               </Box>
@@ -61,3 +68,7 @@ const About = () => {
 }
 
 export default About
+
+// https://richardkaufman.dev/
+// https://jonalvarezz.com/
+// https://nicobytes.com/

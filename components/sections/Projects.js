@@ -41,17 +41,22 @@ const About = () => {
                   ThinkShopStore
                 </Typography>
                 <Typography variant='body1' gutterBottom>
-                  body1. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum
-                  inventore consectetur, neque doloribus, cupiditate numquam
-                  dignissimos laborum fugiat deleniti? Eum quasi quidem
-                  quibusdam.
+                  ThinkShop is a web application for the sale of real state such
+                  as apartments, it's build with{' '}
+                  <Link href='https://www.odoo.com' target='_blank'>
+                    Odoo
+                  </Link>{' '}
+                  taking advantage of the tools it provides.
                 </Typography>
-                <Link href='https://thinkshopstore.com/' target='_blank'>
-                  <Button variant='outlined' color='secondary'>
-                    See live
-                  </Button>
-                </Link>
+
+                <Button
+                  variant='outlined'
+                  color='secondary'
+                  href='https://thinkshopstore.com/'
+                  target='_blank'
+                >
+                  See live
+                </Button>
               </Box>
             </Grid>
 
