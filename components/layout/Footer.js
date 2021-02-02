@@ -16,3 +16,4 @@ const Footer = () => {
 }
 
 export default Footer
+// https://hackernoon.com/how-to-make-a-silky-smooth-scroll-in-react-5dj3xdl
