@@ -25,7 +25,40 @@ const About = () => {
       <Typography variant='h5' align='center' sx={{ mt: '5vh' }} gutterBottom>
         Would you like to work with me? Awesome!
       </Typography>
-
+      <address>
+        <Grid container style={{ flexGrow: 1 }} spacing={2}>
+          <Grid item xs={12}>
+            <Grid container justifyContent='center' spacing={2}>
+              <Grid item>
+                <Button
+                  variant='outlined'
+                  href='mailto:daniel.cutipa@hotmail.com'
+                >
+                  Outlook
+                </Button>
+              </Grid>
+              <Grid item>{' or '}</Grid>
+              <Grid item>
+                <Button
+                  variant='outlined'
+                  href='mailto:l.daniel.cutipa@gmail.com'
+                >
+                  Gmail
+                </Button>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </address>
+      <Typography
+        variant='subtitle1'
+        align='center'
+        sx={{ mt: '2vh' }}
+        gutterBottom
+        component='div'
+      >
+        if you prefer
+      </Typography>
       <Container maxWidth='md'>
         <div className={classes.root}>
           <Grid container spacing={3}>
