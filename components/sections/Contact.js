@@ -26,9 +26,9 @@ const About = () => {
         Would you like to work with me? Awesome!
       </Typography>
       <address>
-        <Grid container style={{ flexGrow: 1 }} spacing={2}>
+        <Grid container style={{ flexGrow: 1 }}>
           <Grid item xs={12}>
-            <Grid container justifyContent='center' spacing={2}>
+            <Grid container justifyContent='center'>
               <Grid item>
                 <Button
                   variant='outlined'
