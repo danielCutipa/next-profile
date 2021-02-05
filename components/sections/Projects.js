@@ -36,6 +36,14 @@ const About = () => {
       <Container maxWidth='md'>
         <div className={classes.root}>
           <Project
+            title={'Universiclick'}
+            description={
+              'Universiclick is one of the best platform for managing students and teachers of an educational institution.'
+            }
+            url={'https://universiclick.com/'}
+            image={'/src/images/universiclick.PNG'}
+          />
+          <Project
             title={'ThinkShopStore'}
             // description={`ThinkShop is a web application for the sale of real state such as apartments, it's build with Odoo taking advantage of the tools it provides.`}
             description={`ThinkShop is a web application for the sale of real state such as
@@ -45,14 +53,6 @@ const About = () => {
             techUrl={'https://www.odoo.com'}
             tech={'Odoo'}
             image={'/src/images/think.PNG'}
-          />
-          <Project
-            title={'Universiclick'}
-            description={
-              'Universiclick is one of the best platform for managing students and teachers of an educational institution.'
-            }
-            url={'https://universiclick.com/'}
-            image={'/src/images/universiclick.PNG'}
           />
         </div>
       </Container>

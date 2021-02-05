@@ -22,9 +22,9 @@ const Hero = () => {
         <Typography variant='h4' gutterBottom>
           {'Frontend Developer with React js.'}
         </Typography>
-        <Typography variant='h5' gutterBottom>
+        {/* <Typography variant='h5' gutterBottom>
           {'Team Leader and Coach.'}
-        </Typography>
+        </Typography> */}
 
         <Grid container className={styles.icons}>
           <Link href='https://www.linkedin.com/in/danielcutipa'>
@@ -33,9 +33,9 @@ const Hero = () => {
           <Link href='https://github.com/danielCutipa'>
             <GitHubIcon style={{ color: grey['900'] }} />
           </Link>
-          <Link href='https://www.facebook.com/daniel.cutipa.u'>
+          {/* <Link href='https://www.facebook.com/daniel.cutipa.u'>
             <FacebookIcon style={{ color: blue['A700'] }} />
-          </Link>
+          </Link> */}
           <Link href='https://twitter.com/d_cutipa'>
             <TwitterIcon style={{ color: blue[500] }} />
           </Link>
