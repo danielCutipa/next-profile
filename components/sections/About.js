@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
   Box,
   Paper,
@@ -37,10 +38,10 @@ const About = () => {
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item sm={6} xs={12} align='center'>
-              <img
+              <Image
                 src='/src/images/photo.jpg'
                 className={styles.img}
-                alt='photo'
+                alt='photo_daniel_cutipa'
               />
             </Grid>
             <Grid item sm={6} xs={12} className={styles.text}>
