@@ -42,6 +42,8 @@ const About = () => {
                 src='/src/images/photo.jpg'
                 className={styles.img}
                 alt='photo_daniel_cutipa'
+                width={'auto'}
+                height={500}
               />
             </Grid>
             <Grid item sm={6} xs={12} className={styles.text}>
